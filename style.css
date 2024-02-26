@@ -1,0 +1,65 @@
+<style>
+    /* Estilos CSS podem ser adicionados aqui */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #FFF100;
+        color: #2E3092;
+        padding: 20px;
+        text-align: center;
+    }
+    menu {
+        padding: 0px;
+    }
+  
+    .botoes-container {
+        background-color: #FFFFFF;
+        text-align: center;
+    }
+    
+    .botao {
+        margin: 0px;
+        padding: 8px 16px;
+        background-color: #fff20044; /* Cor de fundo suave */
+        color: #2E3092; /* Cor do texto */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: Arial, sans-serif; /* Fonte legível */
+        font-size: 14px; /* Tamanho da fonte */
+    }
+    
+    .botao:hover {
+        background-color: #ddd; /* Cor de fundo suave no hover */
+
+    }
+    section {
+        background-color: rgba(128, 128, 128, 0.212);
+        padding: 20px; 
+    }
+    .section-content {
+        display: flex;
+    }
+    .texto-esquerda {
+        flex: 1; /* Ocupa todo o espaço disponível */
+        justify-content: left;
+        text-align: justify;
+    }
+    .imagem-direita {
+        flex: 1; /* Ocupa todo o espaço disponível */
+        text-align: right; /* Alinha a imagem à direita */
+    }
+    .imagem-direita img {
+        max-width: 65%; /* Tamanho máximo de 65% da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    footer {
+        background-color: #2E3092;
+        color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
