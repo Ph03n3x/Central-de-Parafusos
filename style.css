@@ -1,65 +1,161 @@
-<style>
-    /* Estilos CSS podem ser adicionados aqui */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        background-color: #FFF100;
-        color: #2E3092;
-        padding: 20px;
-        text-align: center;
-    }
-    menu {
-        padding: 0px;
-    }
-  
-    .botoes-container {
-        background-color: #FFFFFF;
-        text-align: center;
-    }
-    
-    .botao {
-        margin: 0px;
-        padding: 8px 16px;
-        background-color: #fff20044; /* Cor de fundo suave */
-        color: #2E3092; /* Cor do texto */
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-family: Arial, sans-serif; /* Fonte legível */
-        font-size: 14px; /* Tamanho da fonte */
-    }
-    
-    .botao:hover {
-        background-color: #ddd; /* Cor de fundo suave no hover */
+/* Estilos globais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    }
-    section {
-        background-color: rgba(128, 128, 128, 0.212);
-        padding: 20px; 
-    }
-    .section-content {
-        display: flex;
-    }
-    .texto-esquerda {
-        flex: 1; /* Ocupa todo o espaço disponível */
-        justify-content: left;
-        text-align: justify;
-    }
-    .imagem-direita {
-        flex: 1; /* Ocupa todo o espaço disponível */
-        text-align: right; /* Alinha a imagem à direita */
-    }
-    .imagem-direita img {
-        max-width: 65%; /* Tamanho máximo de 65% da tela */
-        height: auto; /* Mantém a proporção da imagem */
-    }
-    footer {
-        background-color: #2E3092;
-        color: #FFFFFF;
-        padding: 20px;
-        text-align: center;
-    }
-</style>
+        /* Estilos específicos para o cabeçalho */
+
+        .header-container {
+            display:flex;
+            justify-content:space-between;
+            position:relative;
+            width:100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #FFD504);
+            filter:blur(0.5);
+        }
+        .left-img {
+            width:30%;
+            display:flex;
+            justify-content:flex-start;
+        }
+
+        .right-img {
+            width:30%;
+            display:flex;
+            justify-content:flex-end;
+            filter:blur(0.5);
+        }
+
+        .central {
+            width:40%;
+            display:flex;
+            justify-content:center;
+        }
+
+        .left-image {
+            max-width:400px;
+            min-width:80px;
+            transform: rotate(180deg);
+        }
+
+        .right-image {
+            max-width:400px;
+            min-width:80px;
+            transform: scaleY(-1);
+        }
+
+        .logo-img {
+            width:100%;
+        }
+
+        /* Estilos para imagens */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Estilos para o menu */
+        menu {
+            padding: 0px;
+        }
+
+        /* Estilos para o container de botões */
+        .botoes-container {
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+
+        /* Estilos para os botões */
+        .botao {
+            margin: 0px;
+            padding: 8px 16px;
+            background-color: #fff20044;
+            color: #2E3092;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .botao:hover {
+            background-color: #ddd;
+        }
+
+        /* Estilos para as seções */
+        section {
+            background-color: rgba(128, 128, 128, 0.212);
+            padding: 20px;
+        }
+
+        /* Estilos para o conteúdo da seção */
+        .section-content {
+            display: flex;
+        }
+
+        /* Estilos para o texto à esquerda */
+        .texto-esquerda {
+            flex: 1;
+            justify-content: left;
+            text-align: justify;
+        }
+
+        /* Estilos para a imagem à direita */
+        .imagem-direita {
+            flex: 1;
+            text-align: right;
+        }
+
+        /* Estilos para imagens dentro da div .imagem-direita */
+        .imagem-direita img {
+            max-width: 65%;
+            height: auto;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #2E3092;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para as divs container, left-div e right-div */
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-div {
+            width: 40%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .right-div {
+            width: 50%;
+            background-color: #e0e0e0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para os botões de produto */
+        .botao-produto {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+        }
+
+        .botao-produto:hover {
+            background-color: #45a049;
+        }
