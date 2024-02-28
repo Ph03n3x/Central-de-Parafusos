@@ -1,161 +1,213 @@
 /* Estilos globais */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-        /* Estilos específicos para o cabeçalho */
+/* Estilos específicos para o cabeçalho */
 
-        .header-container {
-            display:flex;
-            justify-content:space-between;
-            position:relative;
-            width:100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #FFD504);
-            filter:blur(0.5);
-        }
-        .left-img {
-            width:30%;
-            display:flex;
-            justify-content:flex-start;
-        }
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.37), #e4c7535d);
+  filter: blur(0.5);
+}
+.left-img {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
 
-        .right-img {
-            width:30%;
-            display:flex;
-            justify-content:flex-end;
-            filter:blur(0.5);
-        }
+.right-img {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  filter: blur(0.5);
+}
 
-        .central {
-            width:40%;
-            display:flex;
-            justify-content:center;
-        }
+.logo {
+  min-width: 40vw;
+  display: flex;
+  justify-content: center;
+}
 
-        .left-image {
-            max-width:400px;
-            min-width:80px;
-            transform: rotate(180deg);
-        }
+.left-image {
+  max-width: 400px;
+  min-width: 80px;
+  transform: rotate(180deg);
+}
 
-        .right-image {
-            max-width:400px;
-            min-width:80px;
-            transform: scaleY(-1);
-        }
+.right-image {
+  max-width: 400px;
+  min-width: 80px;
+  transform: scaleY(-1);
+}
 
-        .logo-img {
-            width:100%;
-        }
+.logo-img {
+  width: 100%;
+}
 
-        /* Estilos para imagens */
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+/* Estilos para imagens */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-        /* Estilos para o menu */
-        menu {
-            padding: 0px;
-        }
+/* Estilos para o menu */
+menu {
+  padding: 0px;
+}
 
-        /* Estilos para o container de botões */
-        .botoes-container {
-            background-color: #FFFFFF;
-            text-align: center;
-        }
+/* Estilos para o container de botões */
+.botoes-container {
+  background-color: #ffffff;
+  text-align: center;
+}
 
-        /* Estilos para os botões */
-        .botao {
-            margin: 0px;
-            padding: 8px 16px;
-            background-color: #fff20044;
-            color: #2E3092;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-        }
+/* Estilos para os botões */
+.botao {
+  margin: 0px;
+  padding: 8px 16px;
+  background-color: #fff20044;
+  color: #2e3092;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  
+}
 
-        .botao:hover {
-            background-color: #ddd;
-        }
+.botao:hover {
+  background-color: #ddd;
+}
 
-        /* Estilos para as seções */
-        section {
-            background-color: rgba(128, 128, 128, 0.212);
-            padding: 20px;
-        }
+/* Estilos para as seções */
+section {
+  background-color: rgba(128, 128, 128, 0.212);
+  padding: 20px;
+}
+.select cat {
+  display: flex;
+  flex-direction: row;
+}
 
-        /* Estilos para o conteúdo da seção */
-        .section-content {
-            display: flex;
-        }
+.menu {
+  flex: 1;
+  padding: 20px;
+  text-align: right;
+}
 
-        /* Estilos para o texto à esquerda */
-        .texto-esquerda {
-            flex: 1;
-            justify-content: left;
-            text-align: justify;
-        }
+.produtos {
+  flex: 3;
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
 
-        /* Estilos para a imagem à direita */
-        .imagem-direita {
-            flex: 1;
-            text-align: right;
-        }
+.cards {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.botao-desc {
+  width: 30px;
+  height: 20px;
+  font-size: 1em;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  transform: translateX(-50%); /* Corrige a centralização */
 
-        /* Estilos para imagens dentro da div .imagem-direita */
-        .imagem-direita img {
-            max-width: 65%;
-            height: auto;
-        }
+}
 
-        /* Estilos para o rodapé */
-        footer {
-            background-color: #2E3092;
-            color: #FFFFFF;
-            padding: 20px;
-            text-align: center;
-        }
+.botao:hover {
+  background-color: #0056b3;
+}
 
-        /* Estilos para as divs container, left-div e right-div */
-        .container {
-            display: flex;
-            justify-content: space-between;
-        }
+/* Estilos para o conteúdo da seção */
+.section-content {
+  display: flex;
+}
 
-        .left-div {
-            width: 40%;
-            background-color: #f0f0f0;
-            padding: 20px;
-            box-sizing: border-box;
-        }
+/* Estilos para o texto à esquerda */
+.texto-esquerda {
+  flex: 1;
+  justify-content: left;
+  text-align: justify;
+}
 
-        .right-div {
-            width: 50%;
-            background-color: #e0e0e0;
-            padding: 20px;
-            box-sizing: border-box;
-        }
+/* Estilos para a imagem à direita */
+.imagem-direita {
+  flex: 1;
+  text-align: right;
+}
 
-        /* Estilo para os botões de produto */
-        .botao-produto {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 5px;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            border: none;
-        }
+/* Estilos para imagens dentro da div .imagem-direita */
+.imagem-direita img {
+  max-width: 65%;
+  height: auto;
+}
 
-        .botao-produto:hover {
-            background-color: #45a049;
-        }
+/* Estilos para o rodapé */
+footer {
+  background-color: #2e3092;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para as divs container, left-div e right-div */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-div {
+  width: 40%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-div {
+  width: 50%;
+  background-color: #e0e0e0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo para os botões de produto */
+.botao-produto {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.botao-produto:hover {
+  background-color: #45a049;
+}
