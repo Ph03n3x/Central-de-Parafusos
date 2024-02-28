@@ -123,6 +123,7 @@ section {
   position: relative;
 }
 .botao-desc {
+display: flex;
   width: 30px;
   height: 20px;
   font-size: 1em;
@@ -133,8 +134,8 @@ section {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  position: absolute;
-  transform: translateX(-50%); /* Corrige a centralização */
+  position: relative;
+  align-items: center;
 
 }
 
