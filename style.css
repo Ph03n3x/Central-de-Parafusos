@@ -15,6 +15,14 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.37), #e4c7535d);
   filter: blur(0.5);
 }
+.content {
+    display: flow-root;
+    text-align: center;
+    margin: 0px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.37), #e4c7535d);
+    filter: blur(0.5);
+    color: #212542;
+}
 .left-img {
   width: 30%;
   display: flex;
@@ -63,7 +71,7 @@ menu {
 
 /* Estilos para o container de botões */
 .botoes-container {
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.37);
   text-align: center;
 }
 
@@ -71,13 +79,14 @@ menu {
 .botao {
   margin: 0px;
   padding: 8px 16px;
-  background-color: #fff20044;
-  color: #2e3092;
+  background-color: rgba(62, 57, 57, 0);
+  color: #212542;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-family: Arial, sans-serif;
   font-size: 14px;
+  border: solid rgba(98, 103, 109, 0.23);
   
 }
 
@@ -87,7 +96,7 @@ menu {
 
 /* Estilos para as seções */
 section {
-  background-color: rgba(128, 128, 128, 0.212);
+  background-color: rgba(128, 128, 128, 0.578);
   padding: 20px;
 }
 .select cat {
@@ -99,6 +108,52 @@ section {
   flex: 1;
   padding: 20px;
   text-align: right;
+}
+
+.filtro-produtos {
+  border-bottom:1px solid #CCC;  
+  padding-bottom:16px;
+  margin-bottom:40px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.filtro-field {
+  display:flex;
+  gap:16px;
+  font-family:monospace;
+  text-transform:uppercase;
+  align-items:center;
+  line-height:30px;
+}
+.filtro-field button:hover {
+    background-color: #ddd;
+  }
+
+.filtro-field > select {
+  min-width:100px;
+  height:30px;
+  text-transform:uppercase;
+  font-family:monospace;
+  padding-left:4px;
+  border-radius:4px;
+  border: 1px solid #ccc;
+}
+
+.filtro-field > button {
+  height:30px;
+  padding-left:4px;
+  border-radius:4px;
+  border: 1px solid #ccc;
+  padding-left:8px;
+  padding-right:8px;
+  background:white;
+}
+
+
+.black-button {
+  background:black !important;
+  color:white;
 }
 
 .produtos {
@@ -121,36 +176,18 @@ section {
   width: 100px;
   height: 150px;
   background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  border: 1px solid #d20f0f;
   padding: 8px;
+  border-radius: 4%;
   display:flex;
-  border: 1px solid black;
-  border-radius: 4%;
+  flex-direction:column;
+  justify-content: space-between; /* Alinha os itens na div */
 }
-.cards img {
-  object-fit: contain;
-  height: max-content;
-  z-index: 1;
-  border: 1px solid black;
-  border-radius: 4%;
-}
-.botao-desc {
-  height: 20px;
-  font-size: 1em;
-  background-color: #007bff;
-  background-size: ;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transform: translate(-145%,+600%);
-  align-items: center;
+.botao-desc:hover {
+    background-color: #d91414a0;
+  }
 
-}
 
-.botao:hover {
-  background-color: #0056b3;
-}
 
 /* Estilos para o conteúdo da seção */
 .section-content {
