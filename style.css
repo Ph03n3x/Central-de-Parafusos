@@ -124,16 +124,27 @@ section {
   border: 1px solid #ccc;
   padding: 8px;
   display:flex;
-  flex-direction:column;
+  border: 1px solid black;
+  border-radius: 4%;
+}
+.cards img {
+  object-fit: contain;
+  height: max-content;
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 4%;
 }
 .botao-desc {
   height: 20px;
   font-size: 1em;
   background-color: #007bff;
+  background-size: ;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transform: translate(-145%,+600%);
+  align-items: center;
 
 }
 
