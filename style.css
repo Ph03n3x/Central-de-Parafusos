@@ -164,7 +164,7 @@ section {
 .container-cards {
   display: flex;
   flex-wrap: wrap;
-  border:1px solid red;
+  border:1px solid rgb(0, 0, 0);
   width:100%;
   display:flex;
   gap:16px;
@@ -176,12 +176,22 @@ section {
   width: 100px;
   height: 150px;
   background-color: #f0f0f0;
-  border: 1px solid #d20f0f;
+  border: 1px solid #000000;
   padding: 8px;
   border-radius: 4%;
   display:flex;
   flex-direction:column;
   justify-content: space-between; /* Alinha os itens na div */
+}
+.cards img {
+  border: 1px solid black;
+  border-radius: 4%;
+}
+/*.botao-desc {
+background-color: #1632ce56;
+color:white;
+border-radius: 6%;
+
 }
 .botao-desc:hover {
     background-color: #d91414a0;
@@ -242,19 +252,29 @@ footer {
 }
 
 /* Estilo para os botões de produto */
-.botao-produto {
+.botao-desc {
   display: block;
   width: 100%;
   padding: 10px;
   margin-bottom: 5px;
-  background-color: #4caf50;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(27, 24, 24);
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   border: none;
+  font:bold;
+  border-radius: 4%;
+  border: 1px solid rgba(60, 56, 56, 0.268);
 }
 
-.botao-produto:hover {
-  background-color: #45a049;
+.botao-desc:hover {
+  background-color: #00000023;
+}
+.cttbuton {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
 }
