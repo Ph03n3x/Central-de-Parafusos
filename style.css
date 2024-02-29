@@ -99,15 +99,17 @@ section {
   background-color: rgba(128, 128, 128, 0.578);
   padding: 20px;
 }
-.select cat {
+/*.select-cat {
   display: flex;
-  flex-direction: row;
-}
+  width:100%;
+  justify-content: ;
+}*/
 
 .menu {
   flex: 1;
   padding: 20px;
   text-align: right;
+  width: 100vw;
 }
 
 .filtro-produtos {
@@ -115,7 +117,8 @@ section {
   padding-bottom:16px;
   margin-bottom:40px;
   display:flex;
-  justify-content:space-between;
+  justify-content:;
+  width: 100%;
 }
 
 .filtro-field {
@@ -125,6 +128,7 @@ section {
   text-transform:uppercase;
   align-items:center;
   line-height:30px;
+  flex-wrap: wrap;
 }
 .filtro-field button:hover {
     background-color: #ddd;
@@ -168,7 +172,7 @@ section {
   width:100%;
   display:flex;
   gap:16px;
-  padding:16px;
+  padding:16px,0px;
   justify-content:center;
 }
 
@@ -272,9 +276,9 @@ footer {
   background-color: #00000023;
 }
 .cttbuton {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 30px;
+  right: 30px;
 }
