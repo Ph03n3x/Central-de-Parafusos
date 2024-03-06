@@ -99,12 +99,27 @@ section {
   background-color: rgba(128, 128, 128, 0.578);
   padding: 20px;
 }
-/*.select-cat {
+.section-who{
   display: flex;
-  width:100%;
-  justify-content: ;
-}*/
-
+}
+/* Estilos para o conteúdo da seção */
+.section-content {
+  justify-content: left;
+  height: 100%;
+    width: 100%;
+    background-image: url('imagens/faixadaslim.png'); /* caminho para sua Fimagem */
+    background-size: cover; /* ajustar o tamanho da imagem para cobrir toda a div */
+    background-position: center; /* centralizar a imagem */
+  }
+  
+  /* Estilos para o texto à esquerda */
+  .texto-esquerda {
+    color: white;
+    text-align: justify;
+}
+.texto-esquerda > p {
+  max-width: 40%;
+}
 .menu {
   flex: 1;
   padding: 20px;
@@ -117,13 +132,12 @@ section {
   padding-bottom:16px;
   margin-bottom:40px;
   display:flex;
-  justify-content:;
-  width: 100%;
+  width: 100%;F
 }
 
 .filtro-field {
-  display:flex;
-  gap:16px;
+  display: flex;
+  gap: 16px;
   font-family:monospace;
   text-transform:uppercase;
   align-items:center;
@@ -191,42 +205,6 @@ section {
   border: 1px solid black;
   border-radius: 4%;
 }
-/*.botao-desc {
-background-color: #1632ce56;
-color:white;
-border-radius: 6%;
-
-}
-.botao-desc:hover {
-    background-color: #d91414a0;
-  }
-
-
-
-/* Estilos para o conteúdo da seção */
-.section-content {
-  display: flex;
-}
-
-/* Estilos para o texto à esquerda */
-.texto-esquerda {
-  flex: 1;
-  justify-content: left;
-  text-align: justify;
-}
-
-/* Estilos para a imagem à direita */
-.imagem-direita {
-  flex: 1;
-  text-align: right;
-}
-
-/* Estilos para imagens dentro da div .imagem-direita */
-.imagem-direita img {
-  max-width: 65%;
-  height: auto;
-}
-
 /* Estilos para o rodapé */
 footer {
   background-color: #2e3092;
