@@ -209,13 +209,6 @@ section {
   border: 1px solid black;
   border-radius: 4%;
 }
-/* Estilos para o rodapé */
-footer {
-  background-color: #2e3092;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-}
 
 /* Estilos para as divs container, left-div e right-div */
 .container {
@@ -265,4 +258,13 @@ footer {
   right: 30px;
   border-radius: 20%;
   background-color: white;
+  border: 1px solid  black;
+}
+/* Estilos para o rodapé */
+footer {
+  background-color: #2e3092;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid black;
 }
