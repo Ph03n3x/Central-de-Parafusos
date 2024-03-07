@@ -9,6 +9,7 @@ body {
 }
 .tudo {
   max-width: 1024px;
+  background-color: rgba(128, 128, 128, 0.578);
 }
 
 /* Estilos específicos para o cabeçalho */
@@ -102,29 +103,32 @@ menu {
 
 /* Estilos para as seções */
 section {
-  background-color: rgba(128, 128, 128, 0.578);
-  padding: 20px;
-}
-.section-who{
-  display: flex;
-}
-/* Estilos para o conteúdo da seção */
-.section-content {
-  display:flex;
-  gap:32px;
+  padding: 28px;
 }
 
-.image-capa {
+.imagem-capa  {
+  width:50%;
+  
+}
+.imagem-capa > img  {
   width:100%;
-  max-height:200px;
+}
+
+.main {
+  display:flex;
+  gap:32px;
 }
   
 /* Estilos para o texto à esquerda */
 .texto-esquerda {
-    color: white;
-    text-align: justify;
     width:50%;
-    
+}
+
+.texto-empresa {
+  color: white;
+  font-size:24px;
+  line-height:32px;
+  text-align: justify;
 }
 
 .menu {
@@ -261,7 +265,10 @@ section {
   right: 30px;
   border-radius: 20%;
   background-color: white;
-  border: 1px solid  black;
+}
+
+.placeholder-img{
+  width:100%;
 }
 /* Estilos para o rodapé */
 footer {
